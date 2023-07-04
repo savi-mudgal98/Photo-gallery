@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
 *{
-    margin: 0; padding: 0; box-sizing: border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0; box-sizing: border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: lightgreen;
 }
 
 body{
@@ -7,7 +9,8 @@ body{
 }
 
 h1{
-    font-size: 40px; font-weight: bold; text-align: center; margin: 40px 0 60px 0;
+    font-size: 40px; font-weight: bold; text-align: center;
+     margin: 40px 0 60px 0; color: rgb(253, 24, 62); background-color: salmon;   font-family:'Titan One',cursive; word-spacing: 10px; letter-spacing: 20px;
 }
 
 form{
@@ -73,11 +76,16 @@ form{
 #show-more-button
 {
 
-    background-color: aqua;
-    font-size: 20px; border: none; color: #fff; padding: 10px 20px;
+   background-color: transparent;
+    font-size: 20px; border: none; color: #138065 ; padding: 10px 20px;
     text-align: center; margin: 30px auto; border-radius: 5px;
-    cursor: pointer; display: none;
+    cursor: pointer; display: none; border: 3px solid #138065; transition:all 0.5s ease;
 }
+
+#show-more-button:hover{
+    color:white; background-color: #138065;
+}
+
 
 @media screen and (max-width:768px)
 {
@@ -92,3 +100,4 @@ form{
     .search-result{width: 100%;}
 
 }
+
